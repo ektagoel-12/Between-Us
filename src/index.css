@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0817;
+    color: #f1f5f9;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Glassmorphism & Romantic Glows */
+.glass-panel {
+  background: rgba(22, 16, 43, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(30, 22, 58, 0.8);
+  border-color: rgba(216, 180, 254, 0.3);
+  transform: translateY(-1px);
+}
+
+.glass-pill {
+  background: rgba(35, 24, 68, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(192, 132, 252, 0.2);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 11, 28, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 51, 234, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}
+
+/* Soft pulse keyframes */
+@keyframes heart-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(244, 63, 94, 0.6));
+  }
+}
+
+.animate-heart-pulse {
+  animation: heart-pulse 2s infinite ease-in-out;
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4s infinite ease-in-out;
+}

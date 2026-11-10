@@ -1,0 +1,6 @@
+{
+  "name": "Between Us - Long-Distance Couples Space",
+  "description": "A private, interactive digital world for long-distance couples featuring shared universes, parallel live dates, AI emotional translator, games, voice notes, and time capsules.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
