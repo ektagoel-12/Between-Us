@@ -2,6 +2,10 @@
 
 An interactive shared space for long-distance couples: a "universe" you both grow, live parallel dates, an AI emotional translator, games, unsent letters, time capsules and more.
 
+
+https://github.com/user-attachments/assets/9a4d352a-de98-43a7-acfa-e4c2b681a38a
+
+
 ## Features
 
 Ten tabs, each a different way to feel close:
