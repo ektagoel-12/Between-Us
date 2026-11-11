@@ -2,6 +2,14 @@
 
 An interactive shared space for long-distance couples: a "universe" you both grow, live parallel dates, an AI emotional translator, games, unsent letters, time capsules and more.
 
+![The shared Universe screen](docs/screenshots/universe.jpg)
+
+| AI Translator | Unsent letters |
+|---|---|
+| ![AI Translator](docs/screenshots/translator.jpg) | ![Unsent letters](docs/screenshots/unsent.jpg) |
+
+*The screenshots show the built-in demo couple (Maya and Liam).*
+
 ## Features
 
 Ten tabs, each a different way to feel close:
@@ -30,7 +38,7 @@ Also: heartbeat "pulses" you can send each other, and a couple code that links t
 Requires Node.js and a Gemini API key.
 
 ```bash
-npm install
+npm install --legacy-peer-deps   # plain `npm install` hits a peer-dependency conflict
 cp .env.example .env   # then set GEMINI_API_KEY
 npm run dev
 ```
